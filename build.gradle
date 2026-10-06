@@ -1,0 +1,34 @@
+plugins
+{
+    id 'java'
+    id 'application'
+}
+
+
+repositories
+{
+    mavenCentral()
+}
+
+dependencies
+{
+    implementation 'org.java-websocket:Java-WebSocket:1.6.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.17'
+}
+
+application
+{
+    mainClass = 'app.App'
+}
+
+java
+{
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+run
+{
+    standardInput = System.in
+}
+
